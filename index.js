@@ -43,10 +43,14 @@ function start() {
   const readNum = await start();  
   fibList.push(index, indexAux);  
   for(let i = 0; i <= readNum.value; i++){
-    indexSum = index + indexAux;
-    fibList.push(indexSum);
-    index = indexAux;
-    indexAux = indexSum;
+    if(indexSum <= readNum.value){
+      indexSum = index + indexAux;
+      fibList.push(indexSum);
+      index = indexAux;
+      indexAux = indexSum;
+    }else{
+      break;
+    }
   }
   console.log("A sequência de Fibonacci é:");
   console.log(fibList);
