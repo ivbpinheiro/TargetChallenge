@@ -40,7 +40,7 @@ function start() {
   let fibList = [];
   console.log("");
   console.log("Digite um número para saber se ele pertence à sequência de Fibonacci");
-  readNum = await start();  
+  const readNum = await start();  
   fibList.push(index, indexAux);  
   for(let i = 0; i <= readNum.value; i++){
     indexSum = index + indexAux;
@@ -50,7 +50,7 @@ function start() {
   }
   console.log("A sequência de Fibonacci é:");
   console.log(fibList);
-  if(fibList.find(element => element == readNum.value)){
+  if(fibList.find(element => element == readNum.value) || readNum.value == 0){
     console.log("O número " + readNum.value + " pertence à sequência de Fibonacci");
   } else{
     console.log("O número " + readNum.value + " não pertence à sequência de Fibonacci");
@@ -95,6 +95,3 @@ function start() {
   console.log(stringReverse);
   return 0;
 })();
-
-
-
