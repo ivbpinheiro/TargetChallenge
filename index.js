@@ -1,4 +1,4 @@
-//Nota: Os exercícios devem ser executados separadamente pois há mais de uma função assícrona na resolução;
+//Nota: Os exercícios devem ser executados separadamente pois há mais de uma função assíncrona na resolução;
 
 
 //1) Observe o trecho de código abaixo:
